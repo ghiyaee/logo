@@ -10,8 +10,17 @@ body{
     align-items: center;
     height: 100vh;
     background: #000;
+    flex-direction: column;
    
 }
+.js img {
+    border-radius: 7px;
+    transition: all 2s ease-in-out;
+}
+.hiden{
+    display: none;
+}
+
 .logo{
     display: flex;
     font-size: 1rem;

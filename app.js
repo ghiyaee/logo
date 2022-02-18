@@ -1,7 +1,7 @@
 const cir = document.querySelectorAll('.cir');
 const div=document.querySelector('.logo')
-
-
+const js = document.querySelector('.js');
+console.log(js);
    setTimeout(() => {
        cir[0].innerHTML = 'J';
        cir[0].style.animationName = 'none';
@@ -72,6 +72,7 @@ const div=document.querySelector('.logo')
        cir[9].style.color = "white";
        cir[9].style.border = "none";
        div.style.borderBottom = '1px solid yellow';
+       js.classList.remove('hiden')
    }, 21000)
 
 
