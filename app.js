@@ -1,7 +1,7 @@
 const cir = document.querySelectorAll('.cir');
 const div=document.querySelector('.logo')
 
-cir.forEach(p => {
+
    setTimeout(() => {
        cir[0].innerHTML = 'J';
        cir[0].style.animationName = 'none';
@@ -73,5 +73,5 @@ cir.forEach(p => {
        cir[9].style.border = "none";
        div.style.borderBottom = '1px solid yellow';
    }, 21000)
-})
+
 

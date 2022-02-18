@@ -21,7 +21,7 @@ body{
 .cir{
     width: 25px;
     height: 25px;
-    background: rgb(214, 235, 32);
+    background: #ffd60a;
     border-top: 12.5px solid rgb(36, 126, 76);
     border-radius: 50%;
     padding: 5px;
