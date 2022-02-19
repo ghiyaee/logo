@@ -20,14 +20,3 @@ for (let i = 0; i < circle.length;i++) {
     }, timer);
     timer += 2000;
 };
-   
-
-
-
-
-
-   
-
-
-
-
