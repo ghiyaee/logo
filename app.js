@@ -2,10 +2,11 @@ const circle = document.querySelectorAll('.circle');
 const logo = document.querySelector('.logo');
 const js = document.querySelector('.js');
 const line = document.querySelector('.line');
-
+console.log(circle);
 let timer = 3000;
 const str = ['J', 'A', 'V', 'A', 'S', 'C', 'R', 'I', 'P', 'T'];
-for (let i in circle) {
+let i = 0;
+for (let i = 0; i < circle.length;i++) {
     setTimeout(() => {
         circle[i].innerHTML = `${str[i]}`;
         circle[i].style.animationName = "none";
@@ -18,13 +19,15 @@ for (let i in circle) {
             line.classList.add('hiden');
         }
     }, timer);
-    timer += 2000; 
+    timer += 2000;
 }
-    
+   
 
 
 
 
+
+   
 
 
 
