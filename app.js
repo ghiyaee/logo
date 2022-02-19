@@ -2,7 +2,6 @@ const circle = document.querySelectorAll('.circle');
 const logo = document.querySelector('.logo');
 const js = document.querySelector('.js');
 const line = document.querySelector('.line');
-console.log(circle);
 let timer = 3000;
 const str = ['J', 'A', 'V', 'A', 'S', 'C', 'R', 'I', 'P', 'T'];
 let i = 0;
@@ -20,7 +19,7 @@ for (let i = 0; i < circle.length;i++) {
         }
     }, timer);
     timer += 2000;
-}
+};
    
 
 
