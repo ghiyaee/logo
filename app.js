@@ -2,7 +2,7 @@ const circle = document.querySelectorAll('.circle');
 const logo = document.querySelector('.logo');
 const js = document.querySelector('.js');
 const line = document.querySelector('.line');
-console.log(typeof circle);
+
 let timer = 3000;
 const str = ['J', 'A', 'V', 'A', 'S', 'C', 'R', 'I', 'P', 'T'];
 for (let i in circle) {
