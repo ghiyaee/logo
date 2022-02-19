@@ -41,11 +41,22 @@ body{
     animation-timing-function: linear;
     text-align: center;
     transition: all 2.5s ease-in-out;
+    font-weight: bold;
 }
 
-
+.line{
+    margin-top: 5px;
+    border-bottom: 5px solid #ffd60a;
+    animation: line 4s infinite linear;
+    animation-iteration-count: 4.9;
+}
 
 @keyframes rotate{
     from{ transform: rotate(-360deg); }
     to{ transform: rotate(360deg); }
+}
+
+@keyframes line{
+ 0%{width: 0%;opacity: 1;}
+ 100%{width:40%;opacity: 0;}
 }

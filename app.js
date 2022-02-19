@@ -1,6 +1,7 @@
 const cir = document.querySelectorAll('.cir');
 const div=document.querySelector('.logo')
 const js = document.querySelector('.js');
+const line=document.querySelector('.line')
 console.log(js);
    setTimeout(() => {
        cir[0].innerHTML = 'J';
@@ -73,6 +74,7 @@ console.log(js);
        cir[9].style.border = "none";
        div.style.borderBottom = '1px solid yellow';
        js.classList.remove('hiden')
+       line.classList.add('hiden')
    }, 21000)
 
 
