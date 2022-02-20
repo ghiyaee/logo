@@ -7,7 +7,6 @@ const str = ['J', 'A', 'V', 'A', 'S', 'C', 'R', 'I', 'P', 'T'];
 
 
 
-
 circle.forEach((p, index, arr) => {
   setTimeout(() => {
             arr[index].innerHTML = `${str[index]}`;
