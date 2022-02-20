@@ -7,8 +7,10 @@ const str = ['J', 'A', 'V', 'A', 'S', 'C', 'R', 'I', 'P', 'T'];
 
 
 
+////////////////////////////////////////////first  one
+
 circle.forEach((p, index, arr) => {
-  setTimeout(() => {
+     setTimeout(() => {
             arr[index].innerHTML = `${str[index]}`;
             arr[index].style.animationName = "none";
             arr[index].style.backgroundColor = "black";
@@ -24,7 +26,7 @@ circle.forEach((p, index, arr) => {
   })
 
 
-
+///////////////////////////////////////////secound two
 
 // for (let i = 0; i < circle.length;i++) {
 //     setTimeout(() => {
@@ -42,6 +44,7 @@ circle.forEach((p, index, arr) => {
 //     timer += 2000;
 // };
 
+///////////////////////////////////////////third three
 
 // let j = 0;
 //   for (let i of circle) {
