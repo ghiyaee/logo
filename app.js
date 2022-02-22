@@ -5,27 +5,26 @@ const line = document.querySelector('.line');
 const reset=document.querySelector('#reset')
 const form = document.querySelector('#form');
 const int = document.querySelector('#int');
+let timer = 3000;
+const arry=[]
 
 reset.addEventListener('click', () => {
     localStorage.clear()
     location.reload()
 })
-const arry=[]
 form.addEventListener('submit', (e) => {
-
     e.preventDefault();
     let newa = int.value.trim();
-    arry.push(...newa);
+    arry.push(...newa.toUpperCase());
     int.value = '';
+    int.innerText = 'please a wait';
     localStorage.setItem('arry', JSON.stringify(arry));
 })
-let timer = 3000;
 const conv = JSON.parse(localStorage.getItem('arry', arry));
 
 ////////////////////////////////////////////first  one
 circle.forEach((p, index, arr) => {
-  
-    console.log(index);
+
     if (conv[index] != undefined) {
         setTimeout(() => {
             arr[index].innerHTML = `${conv[index]}`;

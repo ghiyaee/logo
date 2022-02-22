@@ -37,13 +37,20 @@ body{
     position: absolute;
     right:-10px;
     transform:rotate(90deg);
-    top: 17px;
+    top: 18px;
     font-size: 1.1rem;
    background: tomato;
     outline: none;
-    /* border: none; */
+    border: none;
     border-radius: 7px;
     color: #fff;
+    cursor: pointer;
+    padding: 0px 2px;
+    transition: all .7s ease-in-out;
+    
+}
+#reset:hover{
+    transform: scale(2,2);
 }
 .logo{
     display: flex;
