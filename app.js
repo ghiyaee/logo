@@ -8,6 +8,7 @@ const int = document.querySelector('#int');
 
 reset.addEventListener('click', () => {
     localStorage.clear()
+    location.reload()
 })
 const arry=[]
 form.addEventListener('submit', (e) => {
@@ -23,6 +24,8 @@ const conv = JSON.parse(localStorage.getItem('arry', arry));
 
 ////////////////////////////////////////////first  one
 circle.forEach((p, index, arr) => {
+  
+    console.log(index);
     if (conv[index] != undefined) {
         setTimeout(() => {
             arr[index].innerHTML = `${conv[index]}`;
@@ -30,7 +33,7 @@ circle.forEach((p, index, arr) => {
             arr[index].style.backgroundColor = "black";
             arr[index].style.color = "white";
             arr[index].style.border = "none";
-            if (str[index] == 'T') {
+            if (index == conv.length-1) {
                 logo.style.borderBottom = '1px solid yellow';
                 js.classList.remove('hiden');
                 line.classList.add('hiden');
