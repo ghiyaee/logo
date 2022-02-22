@@ -20,7 +20,31 @@ body{
 .hiden{
     display: none;
 }
+#form{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+#int{
+    padding: 1.1rem;
+    font-size: 1rem;
+    min-width: 100%;
+    text-align: center;
+    border-radius: 7px;
 
+}
+#reset{
+    position: absolute;
+    right:-10px;
+    transform:rotate(90deg);
+    top: 17px;
+    font-size: 1.1rem;
+   background: tomato;
+    outline: none;
+    /* border: none; */
+    border-radius: 7px;
+    color: #fff;
+}
 .logo{
     display: flex;
     font-size: 1rem;

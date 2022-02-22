@@ -2,16 +2,30 @@ const circle = document.querySelectorAll('.circle');
 const logo = document.querySelector('.logo');
 const js = document.querySelector('.js');
 const line = document.querySelector('.line');
+const reset=document.querySelector('#reset')
+const form = document.querySelector('#form');
+const int = document.querySelector('#int');
+
+reset.addEventListener('click', () => {
+    localStorage.clear()
+})
+const arry=[]
+form.addEventListener('submit', (e) => {
+
+    e.preventDefault();
+    let newa = int.value.trim();
+    arry.push(...newa);
+    int.value = '';
+    localStorage.setItem('arry', JSON.stringify(arry));
+})
 let timer = 3000;
-const str = ['J', 'A', 'V', 'A', 'S', 'C', 'R', 'I', 'P', 'T'];
-
-
+const conv = JSON.parse(localStorage.getItem('arry', arry));
 
 ////////////////////////////////////////////first  one
-
 circle.forEach((p, index, arr) => {
-     setTimeout(() => {
-            arr[index].innerHTML = `${str[index]}`;
+    if (conv[index] != undefined) {
+        setTimeout(() => {
+            arr[index].innerHTML = `${conv[index]}`;
             arr[index].style.animationName = "none";
             arr[index].style.backgroundColor = "black";
             arr[index].style.color = "white";
@@ -23,6 +37,9 @@ circle.forEach((p, index, arr) => {
             }
         }, timer);
         timer += 2000;
+    } else {
+        return
+    }
   })
 
 
