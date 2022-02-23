@@ -8,6 +8,9 @@ const int = document.querySelector('#int');
 let timer = 3000;
 const arry=[]
 
+
+
+
 reset.addEventListener('click', () => {
     localStorage.clear()
     location.reload()
@@ -24,7 +27,10 @@ const conv = JSON.parse(localStorage.getItem('arry', arry));
 
 ////////////////////////////////////////////first  one
 circle.forEach((p, index, arr) => {
-
+       const color1 = Math.floor(Math.random() * 255);
+       const color2 = Math.floor(Math.random() * 255);
+       const color3 = Math.floor(Math.random() * 255);
+      arr[index].style.backgroundColor = `rgb(${color1},${color2},${color3})`;
     if (conv[index] != undefined) {
         setTimeout(() => {
             arr[index].innerHTML = `${conv[index]}`;
