@@ -8,9 +8,6 @@ const int = document.querySelector('#int');
 let timer = 3000;
 const arry=[]
 
-
-
-
 reset.addEventListener('click', () => {
     localStorage.clear()
     location.reload()
