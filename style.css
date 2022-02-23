@@ -9,7 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: rgb(8, 8, 8);
+    background: rgb(0, 0, 0);
     flex-direction: column;
    
 }
@@ -47,6 +47,7 @@ body{
     cursor: pointer;
     padding: 0px 2px;
     transition: all .7s ease-in-out;
+  
     
 }
 #reset:hover{
