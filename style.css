@@ -9,7 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #000;
+    background: rgb(24, 23, 23);
     flex-direction: column;
    
 }

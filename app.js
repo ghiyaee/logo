@@ -20,7 +20,6 @@ form.addEventListener('submit', (e) => {
     let newa = int.value.trim();
     arry.push(...newa.toUpperCase());
     int.value = '';
-    int.innerText = 'please a wait';
     localStorage.setItem('arry', JSON.stringify(arry));
 })
 const conv = JSON.parse(localStorage.getItem('arry', arry));
@@ -54,8 +53,12 @@ circle.forEach((p, index, arr) => {
 ///////////////////////////////////////////secound two
 
 // for (let i = 0; i < circle.length;i++) {
-//     setTimeout(() => {
-//         circle[i].innerHTML = `${str[i]}`;
+//        const color1 = Math.floor(Math.random() * 255);
+//        const color2 = Math.floor(Math.random() * 255);
+//        const color3 = Math.floor(Math.random() * 255);
+//        circle[i].style.backgroundColor = `rgb(${color1},${color2},${color3})`;
+//      setTimeout(() => {
+//         circle[i].innerHTML = `${conv[i]}`;
 //         circle[i].style.animationName = "none";
 //         circle[i].style.backgroundColor = "black";
 //         circle[i].style.color = "white";
@@ -73,8 +76,13 @@ circle.forEach((p, index, arr) => {
 
 // let j = 0;
 //   for (let i of circle) {
+//           const color1 = Math.floor(Math.random() * 255);
+//           const color2 = Math.floor(Math.random() * 255);
+//           const color3 = Math.floor(Math.random() * 255);
+//          i.style.backgroundColor = `rgb(${color1},${color2},${color3})`;
 //       setTimeout(() => {
-//             i.innerHTML = `${str[j]}`;
+//           i.innerHTML = `${conv[j]}`;
+//           j++;
 //             i.style.animationName = "none";
 //             i.style.backgroundColor = "black";
 //             i.style.color = "white";
@@ -84,7 +92,7 @@ circle.forEach((p, index, arr) => {
 //                 js.classList.remove('hiden');
 //                 line.classList.add('hiden');
 //             }
-//             j++
 //         }, timer);
+       
 //       timer += 2000;
 //     }
