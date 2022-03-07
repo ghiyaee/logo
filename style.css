@@ -82,7 +82,9 @@ body{
     animation: line 4s infinite linear;
     animation-iteration-count: 4.9;
     margin-top: 1rem;
+    position: relative;
 }
+
 
 @keyframes rotate{
     from{ transform: rotate(-360deg); }

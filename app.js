@@ -6,11 +6,11 @@ const reset=document.querySelector('#reset')
 const form = document.querySelector('#form');
 const int = document.querySelector('#int');
 let timer = 3000;
-const arry=[]
+const arry = [];
 
 reset.addEventListener('click', () => {
-    localStorage.clear()
-    location.reload()
+    localStorage.clear();
+    location.reload();
 })
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -24,7 +24,7 @@ const localName = JSON.parse(localStorage.getItem('arry', arry));
 ////////////////////////////////////////////first  one
 circle.forEach((p, index, arr) => {
     if (localName == '') {
-        arr[index].classList.add('hiden')
+        arr[index].classList.add('hiden');
     } else {
         const color1 = Math.floor(Math.random() * 255);
         const color2 = Math.floor(Math.random() * 255);
@@ -45,7 +45,7 @@ circle.forEach((p, index, arr) => {
             }, timer);
             timer += 2000;
         } else {
-            return
+            return;
         };
     }
 });
