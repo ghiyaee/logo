@@ -1,10 +1,11 @@
 const circle = document.querySelectorAll('.circle');
 const logo = document.querySelector('.logo');
-const js = document.querySelector('.js');
 const line = document.querySelector('.line');
 const reset=document.querySelector('#reset')
 const form = document.querySelector('#form');
 const int = document.querySelector('#int');
+const box = document.querySelector('.box');
+const lines = document.querySelector('.lines')
 let timer = 3000;
 const arry = [];
 
@@ -39,8 +40,9 @@ circle.forEach((p, index, arr) => {
                 arr[index].style.border = "none";
                 if (index == localName.length - 1) {
                     logo.style.borderBottom = '1px solid yellow';
-                    js.classList.remove('hiden');
                     line.classList.add('hiden');
+                    box.classList.add('hiden');
+                    lines.classList.remove('hiden');
                 }
             }, timer);
             timer += 2000;
@@ -49,7 +51,6 @@ circle.forEach((p, index, arr) => {
         };
     }
 });
-
 
 ///////////////////////////////////////////secound two
 
