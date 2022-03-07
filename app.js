@@ -6,6 +6,7 @@ const form = document.querySelector('#form');
 const int = document.querySelector('#int');
 const box = document.querySelector('.box');
 const lines = document.querySelector('.lines')
+const boxs=document.querySelector('.boxs')
 let timer = 3000;
 const arry = [];
 
@@ -26,6 +27,7 @@ const localName = JSON.parse(localStorage.getItem('arry', arry));
 circle.forEach((p, index, arr) => {
     if (localName == '') {
         arr[index].classList.add('hiden');
+        boxs.classList.add('hiden')
     } else {
         const color1 = Math.floor(Math.random() * 255);
         const color2 = Math.floor(Math.random() * 255);
